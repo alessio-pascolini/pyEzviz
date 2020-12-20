@@ -10,22 +10,10 @@ setuptools.setup(
     author='Pierre Ourdouille',
     author_email='baqs@users.github.com',
     description='Pilot your Ezviz cameras',
-    long_description="Pilot your Ezviz cameras with this module. Please view readme on github",
+    long_description=
+    "Pilot your Ezviz cameras with this module. Please view readme on github",
     url='http://github.com/baqs/pyEzviz/',
     packages=setuptools.find_packages(include=['pyezviz']),
-    setup_requires=[
-        'requests',
-        'setuptools'
-    ],
-    install_requires=[
-        'requests',
-        'fake_useragent',
-        'uuid',
-        'pandas'
-    ],
-    entry_points={
-    'console_scripts': [
-        'pyezviz = pyezviz.__main__:main'
-    ]
-    }
-)
+    setup_requires=['requests', 'setuptools'],
+    install_requires=['requests', 'fake_useragent', 'pandas'],
+    entry_points={'console_scripts': ['pyezviz = pyezviz.__main__:main']})
